@@ -1,0 +1,401 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr"><head>
+    <script>
+        var dataLayer = window.dataLayer = window.dataLayer || [];
+        dataLayer = [{
+            'event': 'SIF_Step',
+            'Program': '',
+            'ZIP': '',
+            'Campus': '',
+            'State': '',
+            'Source': '',
+            'Vendor': '',
+            'LeadImportID': '',
+            'Status': '',
+            'SIFInteractResult': '',
+            'SIFInteractField': '',
+            'InteractErrorMessage': ''
+        }];
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1b70bdd1ac","applicationID":"317971585","transactionName":"ZQQBY0JYDEtUBxAKXFxOImRgFgBUWgNLEVxQDhdeU0pPS1wJEQ9SRg4RRB1cBk1WBRAKXFxMBllGUBBXWwkBDUccABBHSA==","queueTime":0,"applicationTime":1,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1130.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/images/shared/icon-iphone.png" rel="apple-touch-icon" sizes="76x76"/>
+    <link href="/images/shared/icon-ipad.png" rel="apple-touch-icon" sizes="76x76"/>
+    <link href="/images/shared/icon-iphone-retina.png" rel="apple-touch-icon" sizes="120x120"/>
+    <link href="/images/shared/icon-ipad-retina.png" rel="apple-touch-icon" sizes="152x152"/>
+    <link rel="manifest" href="/images/shared/site.webmanifest">
+    <link rel="mask-icon" href="/images/shared/safari-pinned-tab.svg" color="#5bbad5">
+      
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/images/shared/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">           
+<title>Robotics in Education | Use and Benefits | Purdue Online</title> 
+<link rel="canonical" href="https://online.purdue.edu/blog/robotics-simulators-education-environment"/>
+<meta name="description" content="The use of simulation technologies and robotics in education have shown benefits for both everyday learning and in special education classrooms."/><meta name="robots" content="index, follow"/><meta name="googlebot" content="index, follow"/>    <meta name="og:title" content="Robotics in Education | Use and Benefits | Purdue Online"/>
+    <meta name="og:description" content="The use of simulation technologies and robotics in education have shown benefits for both everyday learning and in special education classrooms."/>
+    <meta property="og:site_name" content="Purdue University Online"/>
+    <meta property="og:url" content="https://online.purdue.edu/blog/robotics-simulators-education-environment"/>
+    <meta name="og:image" content=""/>
+    <meta property="og:type" content="website"/> 
+    
+    <!--STYLES - Global-->
+    <link rel="stylesheet" type="text/css" href="">
+         <!-- NOT build  /Purdue/online.purdue.edu/Content/_Assets -->
+        <link rel="stylesheet" type="text/css" href="/css/foundation.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/fa.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/styles.min.css"/>  
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:700,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+    
+    <!--Uncomment js and below to enable cookie concent-->
+    <!--<link rel="stylesheet" type="text/css" href="" />-->
+    <!--STYLES - Custom-->
+    
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push(
+        {'gtm.start': new Date().getTime(),event:'gtm.js'}
+        );var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KVPD8XP');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVPD8XP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+ 
+    <a href="#maincontent" class="skip">Skip to main content</a>
+    
+    <!--  header select /content/_navigation/header/header-widget.aspx-->
+    <header>
+    <section class="gold-bar">
+        <div id="mobile-menu" tabindex="0" aria-label="open navigation"></div>
+        <div class="live-chat hide-for-large"><a class="chatBtnClicker" style="display:none;"><i class="fas fa-comment fa-gray"></i></a></div>
+        <div class="phone-number hide-for-large">
+            
+ <a href="tel:+1-877-497-5851"><i class="fas fa-phone fa-gray"></i></a>          
+         </div>
+           
+    <a class="button hide-for-large" href="/request-more-information">Request Info</a>  
+
+        <div id="mobile-search" tabindex="0" aria-label="search"></div>
+    </section>
+    <section class="logo-bar">
+        <div class="container">
+            <div class="grid-x">
+                <div class="cell large-auto medium-auto small-12 align-self-middle" style=" display: flex;">
+                    <div>
+                        <a href="/" class="logo-link">
+                            
+                                                        <img src="/images/shared/purdue-university-logo.png" 
+                                        alt="Purdue University">
+                                                       
+                        <div class="separator"></div>
+                        <div class="online">Online</div>
+                           
+                            </a>
+                    </div>
+                </div>
+                 <div class="cell large-auto medium-auto small-12 align-self-middle show-for-large">
+                    <div class="live-chat">
+                      <span id="lpChatButton-default">
+                        <a class="chatBtnClicker" style="display:none;">
+                          <i class="fas fa-comment fa-gray"></i>
+                          <span class="hide-for-large">Chat</span>
+                          <span class="show-for-large">Live Chat</span>
+                      	</a>
+                      </span>
+                   </div>
+                   <div class="phone-number">
+                     
+   <a href="tel:+1-877-497-5851">
+     <i class="fas fa-phone fa-gray"></i>
+     <span class="hide-for-large">Call</span>
+     <span class="show-for-large">877-497-5851</span>
+   </a>          
+                     <!--<a href="tel:1-800-331-9121">
+                       <i class="fas fa-phone fa-gray"></i>
+                       <span class="hide-for-large">Call</span>
+                       <span class="show-for-large">800-331-9121</span>
+                     </a>-->
+                   </div>
+                   
+                
+                         
+    <a class="button" href="/request-more-information">Request Info</a>  
+
+                </div>
+            </div>
+        </div>
+    </section>
+     
+         <!-- /Purdue/online.purdue.edu/Content/_Navigation/Header/Nav Links Widget  show-->
+     <nav>
+        <div class="container">
+            <div class="grid-x">
+                <div class="cell large-8 menus">
+                    <div class="grid-x utility-bar">
+                        <div class="cell large-auto medium-6 small-6 live-chat">
+                          <span id="lpChatButton-Mobile">
+	                          <a class="chatBtnClicker" style="display:none;">
+                              <i class="fas fa-comment fa-gray"></i>
+                              <span class="hide-for-large">Chat</span>
+                              <span class="show-for-large">Live Chat</span>
+                            </a>
+                          </span>  
+                        </div>
+                        <div class="cell large-auto medium-6 small-6 phone-number">
+                          <i class="fas fa-phone fa-gray"></i>
+                          <a href="tel:1-877-123-4567">
+                            <span class="hide-for-large">Call</span>
+                            <span class="show-for-large">877 123 4567</span>
+                          </a>
+                        </div>
+                    </div>
+                         
+                 <ul>    
+                                            <li class="has-dropdown-menu"><a href="" class="menu-link">Online Programs</a>
+                            <div class="dropdown-menu">
+                                <div class="title"><p>Online Programs</p></div>
+                                                                                 <ul>
+                                                                                                <li><a href="/programs">All Online Programs</a></li>
+                                                                                                <li><a href="/programs/doctorate-degrees">Doctorate</a></li>
+                                                                                                <li><a href="/programs/masters-degrees">Master's</a></li>
+                                                                                                <li><a href="/programs/bachelors-degrees">Bachelor's</a></li>
+                                                                                                <li><a href="/programs/associates-degrees">Associate</a></li>
+                                                                                                <li><a href="/programs/online-certificates">Certificates</a></li>
+                                                                                                <li><a href="/programs/professional-development">Professional Development</a></li>
+                                                                                                
+                                                </ul>
+                                                                            </div>
+                        </li>
+                     
+                                             <li class="has-dropdown-menu"><a href="" class="menu-link">Admissions</a>
+                            <div class="dropdown-menu">
+                                <div class="title"><p>Admissions</p></div>
+                                                                                 <ul>
+                                                                                                <li><a href="/admissions">Online Admissions</a></li>
+                                                                                                <li><a href="/admissions/tuition">Tuition</a></li>
+                                                                                                <li><a href="/admissions/financial-aid">Financial Aid</a></li>
+                                                                                                <li><a href="/admissions/international-students">International Students</a></li>
+                                                                                                <li><a href="/admissions/military-students">Military Students</a></li>
+                                                                                                <li><a href="/admissions/faq">FAQ</a></li>
+                                                                                                
+                                                </ul>
+                                                                            </div>
+                        </li>
+                     
+                                             <li class="has-dropdown-menu"><a href="" class="menu-link">About</a>
+                            <div class="dropdown-menu">
+                                <div class="title"><p>About</p></div>
+                                                                                 <ul>
+                                                                                                <li><a href="/about">About Purdue Online</a></li>
+                                                                                                <li><a href="/about/why-purdue">Why Purdue</a></li>
+                                                                                                <li><a href="/about/accreditation-and-rankings">Accreditation and Rankings</a></li>
+                                                                                                <li><a href="/about/corporate-education">Corporate Education</a></li>
+                                                                                                <li><a href="/about/newsroom">Newsroom</a></li>
+                                                                                                
+                                                </ul>
+                                                                            </div>
+                        </li>
+                     
+                                         
+                     </ul>
+                    
+                                     
+                </div>
+                <div class="cell large-4 align-self-middle search-bar">
+                    <form action="/search-results/index.aspx" method="get" style="position: relative;">
+                        <label for="header-search" class="hide-ally-element">Search</label>
+                        <input id="header-search" name="q" type="text">
+                        <button type="submit" class="search-form-button" sytle="background:white" style="
+                          width: 42px;
+                          height: 32px;
+                          position: absolute;
+                          right: 0;
+                          z-index: 100;
+                          top: 0;
+                      "></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>         
+</header>    <!--CONTENT-->        
+<main class="general-content">
+      <section class="breadcrumbs"> <div class="container"> <div class="grid-x grid-padding-x"> <div class="cell small-12"> <ul><li><a href="/"> Home</a></li><li><a href="/blog"> Blog</a></li><li class='bc-active'> Robotics Simulators Education Environment </li></ul> </div> </div> </div> </section>                                <section class="blog">
+        <div class="container">
+            <div class="blog-title">
+                <h1>The Use of Robotics and Simulators in the Education Environment</h1>
+            </div>
+                                     <div class="separator"></div>
+            <div class="grid-x grid-margin-x">
+                <div class="cell auto large-order-1 medium-order-1 small-order-2">
+                     <div>
+                <p><em>Advances in technology continue to push the envelope in healthcare, travel, communication and education. The use of robotic and simulation technologies have proven themselves to be worthy components of available educational resources. These technologies use in the education environment have shown their value in everyday learning and in the specialized education of students with disabilities.</em></p>
+<h2><strong>Robotics and Simulators in Education</strong></h2>
+<p>The use of robotics has allowed complicated medical procedures to be simplified, the work of dangerous construction projects to be safer and the discovery of our universe to be possible. When applied to education, robotics and simulators can change the way students learn and ultimately create a more knowledgeable and well-adjusted student.</p>
+<p><strong>Elementary and High School Education</strong></p>
+<ul>
+<li><strong>Robotics -&nbsp;</strong>Robots can be used to bring students into the classroom that otherwise might not be able to attend. In New York, a second grader with severe, life-threatening allergies was unable to attend school due to his condition. A four-foot-tall robot provided a 'real school' experience for the boy, 'attending' school and bringing the boy with him via an internal video conferencing system. Robots such as the one mentioned are able to&nbsp;<strong>'</strong>bring school' to students who cannot be present physically.</li>
+<li><strong>Simulators -&nbsp;</strong>High school sees the strongest example of simulators within drivers' education courses.&nbsp;Simulators provide a true-to-life experience&nbsp;while removing any real dangers or risk from scenarios. In drivers' education, students can experience the feeling of being behind the wheel without ever leaving the safety of the classroom. Simulators offer a chance for 'what if' scenarios, which can better prepare student drivers for real-life hazards and obstacles on the roadway.&nbsp;</li>
+</ul>
+<p><strong>Higher Education</strong></p>
+<ul>
+<li><strong>Robotics -&nbsp;</strong>Many careers require specialized knowledge in delicate practices, specifically in the realm of healthcare. When receiving a medical education, many students find benefits in the use of robotics. When learning to perform complicated medical procedures, a human subject isn't feasible, so educators are employing the use of robots as stand-ins. Robots can be created and programmed to give off all indications of human life, including breath and heartbeat. Their use can also be seen in such procedures as injections, surgeries and even delivering children.</li>
+<li><strong>Simulators -&nbsp;</strong>Simulation technology is utilized in a variety of college degree focuses, offering 360 degree real-life scenarios and 3D projections of real experiences. In addition to providing medical students with the means for thorough exploration of the human body, simulators also provide exceptional methods of crisis and disaster training for emergency response and law enforcement trainees. These types of all-encompassing simulators offer a choice and response technology, requiring officers to make split-second decisions and immediately see the ramifications of their actions. These types of scenarios can include violent altercations or behind-the-wheel high-speed chases.</li>
+</ul>
+<p><strong>Special Education</strong></p>
+<ul>
+<li><strong>Robotics</strong>&nbsp;- Students with special requirements are reaching new levels of learning through the use of robotics in the classroom. With these technologies&nbsp;<a href="http://txchnologist.com/post/47102223005/robot-for-communicating-with-autistic-children-could" target="_blank">children with autism</a>&nbsp;are learning communication and social skills and students with&nbsp;<a href="http://www.roboticsbusinessreview.com/article/robots_may_help_kids_with_special_needs" target="_blank">developmental issues</a>&nbsp;and attention disorders are learning focus. Individuals with severe physical disabilities are also offered a constant companion and health monitoring system - all through the use of robotics. Robots can be programmed to suit each individual child's need, offering special education in a much simpler,&nbsp;accessible format.</li>
+<li><strong>Simulators</strong> - Simulators are able to offer students with special needs an introduction to real-world scenarios in a non-threatening environment.&nbsp; Everyday lessons can be taught at a comfortable pace, including subjects ranging from basic self-care to stay-safe techniques in emergency situations. Simulators have also provided a way for special education educators to see the world from their students' perspectives, including hearing-impaired or blind simulations.</li>
+</ul>
+<p>Assistive technology is growing, and the abilities it provides to special education students are limitless. Simulation and robotics technologies offer a range of possibilities within education, with a helpful solution for every student's learning needs. As the technological world unveils new innovations daily, the educational world will continue to benefit from the opportunities offered with these groundbreaking tools.</p>
+<p>You can help shape the influence of technology in education with an <a href="/programs/education/masters-in-education-learning-design-technology">Online Master of Science in Education in Learning Design and Technology</a> from Purdue University Online. This accredited program offers studies in exciting new technologies that are shaping education and offers students the opportunity to take part in the future of innovation.</p>
+<p>Learn more about the online MSEd in Learning Design and Technology at Purdue University today and help redefine the way in which individuals learn. Call <a href="tel:877-497-5851" target="_blank">(877) 497-5851</a> to speak with an admissions advisor or <a href="/programs/request-more-information">click here</a> to request more information.</p>            </div>
+                </div>
+                
+                     
+                             
+                
+            </div>
+           
+           
+        </div>
+    </section>
+                                  </main>   <footer>
+    <section>
+        <div class="container grid-x">
+                        <div class="cell large-auto  ">
+                <div class="cell-container">
+                    <div class="heading" role="link" tabindex="0">
+                        <span>PURDUE ONLINE</span><i class="fas fa-plus"></i>
+                    </div>
+                    <div class="footer-accordion-content">
+                        <ul>
+                                                        <li><a href="/request-more-information">Request Information</a></li>
+                                                                                </ul>
+                    </div>
+                </div>
+            </div>
+                        <div class="cell large-auto  ">
+                <div class="cell-container">
+                    <div class="heading" role="link" tabindex="0">
+                        <span>ONLINE PROGRAMS</span><i class="fas fa-plus"></i>
+                    </div>
+                    <div class="footer-accordion-content">
+                        <ul>
+                                                        <li><a href="/programs">Online Programs</a></li>
+                                                                                    <li><a href="/programs/doctorate-degrees">Doctorate</a></li>
+                                                                                    <li><a href="/programs/masters-degrees">Master's</a></li>
+                                                                                    <li><a href="/programs/bachelors-degrees">Bachelor's</a></li>
+                                                                                    <li><a href="/programs/associates-degrees">Associate</a></li>
+                                                                                    <li><a href="/programs/online-certificates">Certificates</a></li>
+                                                                                    <li><a href="/programs/professional-development">Professional Development</a></li>
+                                                                                </ul>
+                    </div>
+                </div>
+            </div>
+                        <div class="cell large-auto  ">
+                <div class="cell-container">
+                    <div class="heading" role="link" tabindex="0">
+                        <span>ADMISSIONS</span><i class="fas fa-plus"></i>
+                    </div>
+                    <div class="footer-accordion-content">
+                        <ul>
+                                                        <li><a href="/admissions">Online Admissions</a></li>
+                                                                                    <li><a href="/admissions/tuition">Tuition</a></li>
+                                                                                    <li><a href="/admissions/financial-aid">Financial Aid</a></li>
+                                                                                    <li><a href="/admissions/international-students">International Students</a></li>
+                                                                                    <li><a href="/admissions/military-students">Military Students</a></li>
+                                                                                    <li><a href="/admissions/faq">FAQ</a></li>
+                                                                                </ul>
+                    </div>
+                </div>
+            </div>
+                        <div class="cell large-auto  ">
+                <div class="cell-container">
+                    <div class="heading" role="link" tabindex="0">
+                        <span>ABOUT</span><i class="fas fa-plus"></i>
+                    </div>
+                    <div class="footer-accordion-content">
+                        <ul>
+                                                        <li><a href="/about">About Purdue Online</a></li>
+                                                                                    <li><a href="/about/why-purdue">Why Purdue</a></li>
+                                                                                    <li><a href="/about/accreditation-and-rankings">Accreditation and Rankings</a></li>
+                                                                                    <li><a href="/about/corporate-education">Corporate Education</a></li>
+                                                                                    <li><a href="/about/newsroom">Newsroom</a></li>
+                                                                                </ul>
+                    </div>
+                </div>
+            </div>
+                                       
+                <div class="cell large-auto  ">
+                <div class="cell-container">
+                    <div class="image">
+                                    <img src="/images/shared/150-years-of-giant-leaps-desktop.png" class="hide-for-small-only" alt="" />
+                        <img src="/images/shared/150-years-of-giant-leaps.png" class="hide-for-large hide-for-medium" alt="" />
+                                    
+                                    </div>
+                                <div class="social">
+                                        <a target="_blank" href="https://www.facebook.com/PurdueUniversity/"><i class="fab fa-facebook-f"></i></a>
+                                        <a target="_blank" href="https://twitter.com/lifeatpurdue"><i class="fab fa-twitter"></i></a>
+                                        <a target="_blank" href="https://www.youtube.com/user/PurdueUniversity"><i class="fab fa-youtube"></i></a>
+                                        <a target="_blank" href="https://www.instagram.com/lifeatpurdue/"><i class="fab fa-instagram"></i></a>
+                                        <a target="_blank" href="https://www.linkedin.com/edu/purdue-university-18357"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                            </div>
+</div>
+               
+        </div>
+    </section>
+    <section class="copyright">
+        <div class="container">
+            <p></p>
+            <p>
+                Purdue University, Purdue Northwest (PNW), Krannert School of Management, and Purdue names are either trademarks&#8482; or registered&#174; trademarks owned by Purdue University. Copyright &#169; 2019 Kaplan Higher Education                                <span class="divider">|</span>
+                <a href="https://www.purdue.edu/purdue/ea_eou_statement.php">An equal access/equal opportunity university</a>
+                                <span class="divider">|</span>
+                <a href="/privacy-policy">Privacy Policy</a>
+                                <span class="divider">|</span>
+                <a href="/end-user-agreement">End User Agreement</a>
+                                <span class="divider">|</span>
+                <a href="/sitemap">Sitemap</a>
+                            </p>
+        </div>
+    </section>
+</footer>   	<!-- LP chat button placeholder -->
+    <div id="lpChatButton-UM" style="display:none"></div>
+    <!-- /end container -->
+    <!--Scripts-->
+  
+  	<!-- Start Live Person scripts: must be in this order -->
+    
+    <script type="text/javascript" src="/js/utility/livechat/livechat.setup.js" defer></script>
+    
+    <script type="text/javascript" src="/js/utility/livechat/le-mtagconfig.js" defer></script>
+    <script type="text/javascript" src="/js/utility/livechat/le-routingconfig.js" defer></script>
+    <script type="text/javascript" src="/js/utility/livechat/livechatinit.js" defer></script>
+  	<!-- End Live Person Scripts -->
+            
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/js/vendor.min.js"  ></script>
+        <script type="text/javascript" src="/js/vendor/foundation.min.js"  ></script> 
+        
+  
+        <script type="text/javascript" src="/js/scripts.min.js" defer ></script>     
+    
+    <!--Uncomment css and below to enable cookie concent-->
+    <!--<script src="" type="text/javascript"></script>
+    <script src="" type="text/javascript"></script>-->
+</body>
+</html>
